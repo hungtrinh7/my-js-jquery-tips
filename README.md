@@ -5,6 +5,7 @@
 ### Load more list:
 
 ```html
+<!-- Html -->
 <ul id="list">
     <li>One</li>
     <li>Two</li>
@@ -17,7 +18,15 @@
 <div id="loadMore">Load more</div>
 ```
 
+```css
+/* CSS */
+#list li{ 
+    display:none; 
+}
+```
+
 ```js
+// jquery
 var size_li = $("#list li").size();
 x = 5;
 $('#list li:lt('+x+')').show();
